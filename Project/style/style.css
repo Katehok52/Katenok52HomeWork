@@ -31,8 +31,10 @@ body {
 
 .nav-item {
     font-size: 16px;
+    display: block ;
 }
 
 .heading {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
+
