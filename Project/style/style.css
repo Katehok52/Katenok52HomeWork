@@ -21,8 +21,9 @@
     font-style: italic;
 }
 
-body { 
+.body { 
     background-color: bisque;
+    padding: 30px;
 } 
 
 .dev-info {
@@ -38,7 +39,22 @@ body {
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.nav-circle-markers {
+.nav {
     list-style-type: circle;
+    padding-left: 15px;
 }
 
+.header {
+    /* margin: 0 0 20px 0; */
+    margin-bottom: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    margin-bottom: 20px;
+}
