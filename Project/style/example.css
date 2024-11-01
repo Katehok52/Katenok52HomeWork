@@ -7,7 +7,7 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+.main-heading {
     margin-bottom: 20px;
     margin-top: 0px;
 }
