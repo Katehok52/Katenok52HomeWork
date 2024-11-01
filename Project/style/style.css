@@ -1,5 +1,11 @@
-.txt {
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
 .main-heading {
@@ -12,9 +18,13 @@
     font-size: 23px; 
 }
 
-.sub-heading{
+.sub-heading {
     font-size: 16px; 
     font-weight: normal; 
+}
+
+.txt {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .link {
@@ -35,10 +45,6 @@
     display: block ;
 }
 
-.heading {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-}
-
 .nav {
     list-style-type: circle;
     padding-left: 15px;
@@ -49,12 +55,7 @@
     margin-bottom: 20px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .main {
     margin-bottom: 20px;
 }
+
