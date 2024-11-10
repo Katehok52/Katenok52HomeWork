@@ -1,3 +1,7 @@
+* {
+    font-family: "Cormorant", serif;
+}
+
 body {
     padding: 30px;
     margin: 0px;
@@ -5,6 +9,7 @@ body {
     max-width: 1600px;
     min-width: 720px;
     box-sizing: border-box;
+    background-color: aquamarine;
 }
 
 .main-heading {
@@ -13,12 +18,13 @@ body {
 }
 
 .card {
-
     margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid black;
+    padding: 20px;
+    border: 5px solid seagreen;
     box-sizing: border-box;
     width: 600px;
+    background-color: blanchedalmond;
+    border-radius: 10%;
 }
 
 .card-title {
@@ -26,18 +32,21 @@ body {
 }
 
 .card-img {
-    width: 100%;
+    width: 15%;
     margin-bottom: 10px;
+    float: left;
 }
 
 .txt {
-    margin: 0px;
-}
-
-.step1 {
-    margin: 0 0 10px 0;
-}
-
-.step2 {
     margin: 0;
+}
+
+h1 {
+    height: 60px;
+    width: 60px;
+}
+
+.card-title {
+    height: 30px;
+    width: 30px;
 }
