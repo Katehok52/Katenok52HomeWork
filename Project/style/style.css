@@ -47,7 +47,7 @@
 
 .nav {
     list-style-type: circle;
-    padding-left: 15px;
+    /* padding-left: 15px; */
 }
 
 .header {
@@ -59,3 +59,12 @@
     margin-bottom: 20px;
 }
 
+.nav-item {
+    display: block;
+}
+
+.img-float {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
