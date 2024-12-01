@@ -72,6 +72,7 @@
     margin-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .main-container {
     padding: 20px;
     border-radius: 20px;
@@ -108,4 +109,23 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
+=======
+.main-nav-item {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.main-nav-item:hover {
+    transform: scale(1.52);
+    cursor: grab;
+}
+
+.main-nav-item:active {
+    transform: scale(0.69);
+    cursor: grabbing;
+}
+
+.main-nav-item:last-child {
+
+>>>>>>> 7a411a69e5ce96c8755ad07c09d079f1eeca0b3c
 }
