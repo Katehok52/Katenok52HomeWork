@@ -119,13 +119,13 @@
     cursor: grabbing;
 }
 
-.main-nav-item:last-child {
-
-}
-
 .main-nav {
     display: flex;
     gap: 20px;
     justify-content: center;
     align-items: center;
 }
+
+/* .main-nav-item:last-child {
+
+} */
