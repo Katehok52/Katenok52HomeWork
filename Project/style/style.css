@@ -68,3 +68,22 @@
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
+.main-nav-item {
+    transition-property: transform;
+    transition-duration: 300ms;
+}
+
+.main-nav-item:hover {
+    transform: scale(1.52);
+    cursor: grab;
+}
+
+.main-nav-item:active {
+    transform: scale(0.69);
+    cursor: grabbing;
+}
+
+.main-nav-item:last-child {
+
+}
