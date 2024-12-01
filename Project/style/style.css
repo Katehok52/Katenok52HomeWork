@@ -29,6 +29,18 @@
 
 .link {
     font-style: italic;
+
+    .div :hover {
+        color: aquamarine;
+    }
+
+    .div :active {
+        color: blue;
+    }
+
+    .div :visited {
+        color: cadetblue;
+    }
 }
 
 .body { 
@@ -50,16 +62,7 @@
     /* padding-left: 15px; */
 }
 
-.header {
-    /* margin: 0 0 20px 0; */
-    margin-bottom: 20px;
-}
-
-.main {
-    margin-bottom: 20px;
-}
-
-.nav-item {
+.main-nav-item {
     display: block;
 }
 
@@ -67,4 +70,42 @@
     float: left;
     margin-right: 10px;
     margin-bottom: 10px;
+}
+
+.main-container {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.header {
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+
+.main {
+    background-color: darkgoldenrod;
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: darksalmon;
+}
+
+.main-header {
+    position: sticky;
+    top: 0;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    min-height: 100vh;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
