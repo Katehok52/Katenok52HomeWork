@@ -29,18 +29,18 @@
 
 .link {
     font-style: italic;
+}
 
-    .div :hover {
-        color: aquamarine;
-    }
+.link:link:hover {
+    color: aquamarine;
+}
 
-    .div :active {
-        color: blue;
-    }
+.link:link:active {
+    color: blue;
+}
 
-    .div :visited {
-        color: cadetblue;
-    }
+.link:link:visited {
+    color: cadetblue;
 }
 
 .body { 
@@ -72,15 +72,9 @@
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 .main-container {
     padding: 20px;
     border-radius: 20px;
-}
-
-.header {
-    background-color: burlywood;
-    margin-bottom: 20px;
 }
 
 .main {
@@ -88,16 +82,15 @@
     margin-bottom: 20px;
 }
 
-.footer {
-    background-color: darksalmon;
-}
-
 .main-header {
+    background-color: burlywood;
+    margin-bottom: 20px;
     position: sticky;
     top: 0;
 }
 
 .main-footer {
+    background-color: darksalmon;
     display: flex;
     justify-content: space-between;
 }
@@ -109,23 +102,30 @@
     margin: 0 auto;
     margin-left: auto;
     margin-right: auto;
-=======
+}
+
 .main-nav-item {
     transition-property: transform;
     transition-duration: 300ms;
 }
 
 .main-nav-item:hover {
-    transform: scale(1.52);
+    transform: scale(1.2);
     cursor: grab;
 }
 
 .main-nav-item:active {
-    transform: scale(0.69);
+    transform: scale(1.2);
     cursor: grabbing;
 }
 
 .main-nav-item:last-child {
 
->>>>>>> 7a411a69e5ce96c8755ad07c09d079f1eeca0b3c
+}
+
+.main-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
