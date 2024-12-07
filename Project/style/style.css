@@ -4,23 +4,61 @@
     box-sizing: border-box;
 }
 
-.heading {
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+.body { 
+    background-color: bisque;
+    padding: 30px;
+    min-height: 100vh;
+    max-width: 1200px;
+    min-width: 800px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+} 
+
+.main-header {
+    background-color: burlywood;
+    /* margin-bottom: 20px; */
+    position: sticky;
+    top: 0;
 }
 
-.main-heading {
-    text-align: center; 
-    font-weight: bold;
-    font-size: 35px;
+.main-container {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: coral 0 0 10px;
 }
 
-.chapter-heading {
-    font-size: 23px; 
+.main-nav {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
-.sub-heading {
-    font-size: 16px; 
-    font-weight: normal; 
+.nav {
+    list-style-type: circle;
+    /* padding-left: 15px; */
+}
+
+.main-nav-item {
+    transition-property: transform;
+    transition-duration: 300ms;
+    display: block;
+    transition: transform 200ms ease-in-out, color 100ms ease-in-out;
+}
+
+.main-nav-item:hover {
+    transform: scale(1.2);
+    cursor: grab;
+}
+
+.main-nav-item:active {
+    transform: scale(1.2);
+    cursor: grabbing;
 }
 
 .txt {
@@ -29,6 +67,7 @@
 
 .link {
     font-style: italic;
+    transition: color 250ms ease-in-out;
 }
 
 .link:link:hover {
@@ -43,27 +82,13 @@
     color: cadetblue;
 }
 
-.body { 
-    background-color: bisque;
-    padding: 30px;
-} 
 
-.dev-info {
-    text-align: right;
-}
+/* MAIN */
 
-.nav-item {
-    font-size: 16px;
-    display: block ;
-}
-
-.nav {
-    list-style-type: circle;
-    /* padding-left: 15px; */
-}
-
-.main-nav-item {
-    display: block;
+.main {
+    background-color: darkgoldenrod;
+    flex-grow: 1;
+    /* margin-bottom: 20px; */
 }
 
 .img-float {
@@ -72,58 +97,56 @@
     margin-bottom: 10px;
 }
 
-.main-container {
-    padding: 20px;
-    border-radius: 20px;
+/* END MAIN */
+
+
+/* MAIN HEADING */
+
+.main-heading {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 35px;
 }
 
-.main {
-    background-color: darkgoldenrod;
-    margin-bottom: 20px;
+.heading {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.main-header {
-    background-color: burlywood;
-    margin-bottom: 20px;
-    position: sticky;
-    top: 0;
+.profile /* нету :( */
+
+.chapter-heading {
+    font-size: 23px; 
 }
+
+.sub-heading /* не нашёл в html */ {
+    font-size: 16px; 
+    font-weight: normal; 
+}
+
+/* END MAIN HEADING */
+
+
+/* MAIN FOOTER */
 
 .main-footer {
     background-color: darksalmon;
     display: flex;
     justify-content: space-between;
+    /* margin-bottom: 0; */
 }
 
-.body {
-    min-height: 100vh;
-    max-width: 1200px;
-    min-width: 800px;
-    margin: 0 auto;
-    margin-left: auto;
-    margin-right: auto;
+.main-footer-item /* нету :( */
+
+/* END MAIN FOOTER */
+
+
+.dev-info {
+    text-align: right;
 }
 
-.main-nav-item {
-    transition-property: transform;
-    transition-duration: 300ms;
-}
-
-.main-nav-item:hover {
-    transform: scale(1.2);
-    cursor: grab;
-}
-
-.main-nav-item:active {
-    transform: scale(1.2);
-    cursor: grabbing;
-}
-
-.main-nav {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
+.nav-item {
+    font-size: 16px;
+    display: block ;
 }
 
 /* .main-nav-item:last-child {
