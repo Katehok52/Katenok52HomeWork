@@ -81,6 +81,13 @@
     gap: 20px;
 }
 
+.three-column-grid-contaier {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .body {
     min-height: 100vh;
     width: 100%;
@@ -118,6 +125,18 @@
 
 .main {
     flex-grow: 1;
+}
+
+.cards {
+
+}
+
+.card {
+    background-color: slategrey;
+    color: black;
+    padding: 20px;
+    border-radius: 15px; /* tmp */
+    height: 100px;
 }
 
 /* END-MAIN */
