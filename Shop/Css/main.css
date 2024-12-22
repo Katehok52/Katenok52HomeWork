@@ -41,13 +41,14 @@
     text-decoration: none;
     border: 2px solid rgb(100, 0, 151);
     background-color: blueviolet;
-    color: white;
+    color: azure;
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 10px;
     transition-duration: 100ms;
     transition-timing-function: ease-in-out;
     transition-property: transform, background-color;
+    grid-area: btn;
 }
 
 .btn::selection {
@@ -128,7 +129,7 @@
 }
 
 .cards {
-
+    
 }
 
 .card {
@@ -137,6 +138,42 @@
     padding: 20px;
     border-radius: 15px; /* tmp */
     height: 100px;
+    box-shadow: 5px rgb(143, 114, 170);
+    position: relative;
+    top: 5px; left: 5px; 
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 60px 30px;
+    grid-template-rows: 1.5em;
+    grid-template-areas: 
+    "img img title"
+    "img img price"
+    "txt"
+    "btn";
+}
+
+.sub-title {
+    color: azure;
+    font-weight: 100;
+    grid-area: title;
+    size: 28px;
+}
+
+.card-price {
+    color: azure;
+    size: 24px;
+    grid-area: price;
+}
+
+.txt {
+    color: azure;
+    grid-area: txt;
+}
+
+.img {
+    display: block;
+    width: max-content;
+    grid-area: img;
 }
 
 /* END-MAIN */
