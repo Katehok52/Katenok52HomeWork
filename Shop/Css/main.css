@@ -3,8 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
-    color: blueviolet;
-    background-color: white;
+    /* color: blueviolet;
+    background-color: white; */
     font-size: 20px;
 }
 
@@ -49,6 +49,7 @@
     transition-timing-function: ease-in-out;
     transition-property: transform, background-color;
     grid-area: btn;
+    text-align: center;
 }
 
 .btn::selection {
@@ -80,13 +81,6 @@
     display: flex;
     align-items: center;
     gap: 20px;
-}
-
-.three-column-grid-contaier {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, auto);
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .body {
@@ -129,7 +123,9 @@
 }
 
 .cards {
-    
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -137,26 +133,24 @@
     color: black;
     padding: 20px;
     border-radius: 15px; /* tmp */
-    height: 100px;
-    box-shadow: 5px rgb(143, 114, 170);
-    position: relative;
-    top: 5px; left: 5px; 
+    box-shadow: rgb(112, 109, 116) 5px 5px 5px;
+
     display: grid;
-    gap: 20px;
-    grid-template-columns: 60px 30px;
-    grid-template-rows: 1.5em;
+    gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: 
-    "img img title"
-    "img img price"
-    "txt"
-    "btn";
+        "img title"
+        "img price"
+        "txt txt"
+        "btn btn";
 }
 
 .sub-title {
     color: azure;
-    font-weight: 100;
-    grid-area: title;
+    font-weight: 400;
     size: 28px;
+    grid-area: title;
 }
 
 .card-price {
@@ -172,7 +166,7 @@
 
 .img {
     display: block;
-    width: max-content;
+    width: 100%;
     grid-area: img;
 }
 
