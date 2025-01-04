@@ -2,10 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Ubuntu", sans-serif;
-    /* color: blueviolet;
-    background-color: white; */
-    font-size: 20px;
 }
 
 ::selection {
@@ -15,29 +11,42 @@
 
 /* COMMON ITEMS */
 
-.main-title {
+[class*="txt"],
+[class*="title"] {
+    font-family: "Ubuntu", sans-serif;
+    color: blueviolet;
+    font-size: 20px;
+}
+
+[class*="txt"]::selection,
+[class*="title"]::selection {
+    background-color: blue;
+    color: white;
+}
+
+.big-title {
     font-size: 44px;
     text-decoration: none;
 }
 
-.link {
+.txt-link {
     text-decoration: none;
     transition-duration: 100ms;
     transition-timing-function: ease-in-out;
     transition-property: color, transform;
 }
 
-.link:hover {
+[class*="link"]:hover {
     color: rgb(142, 125, 255);
     transform: scale(1.1);
 }
 
-.link:active {
+[class*="link"]:active {
     color: rgb(255, 5, 111);
     transform: scale(0.9);
 }
 
-.btn {
+[class*="txt-btn"] {
     text-decoration: none;
     border: 2px solid rgb(100, 0, 151);
     background-color: blueviolet;
@@ -52,17 +61,17 @@
     text-align: center;
 }
 
-.btn::selection {
+.txt-btn::selection {
     background-color: white;
     color: blueviolet;
 }
 
-.btn:hover {
+.txt-btn:hover {
     transform: scale(1.1);
     background-color: rgb(192, 125, 255);
 }
 
-.btn:active {
+.txt-btn:active {
     transform: scale(0.9);
     background-color: rgb(99, 0, 191);
 }
@@ -70,17 +79,33 @@
 
 /* CONTAINERS */
 
+[class*="container"] {
+    gap: 20px;
+}
+
+[class*="flex-container"] {
+    display: flex;
+    align-items: center;
+}
+
+[class*="column-flex-container"] {
+    flex-direction: column;
+}
+
+[class*="line-flex-container"] {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .one-column-flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
 }
 
-.one-line-flex-container {
+.line-flex-container {
     display: flex;
     align-items: center;
-    gap: 20px;
 }
 
 .body {
@@ -90,7 +115,7 @@
     background-image: radial-gradient(aquamarine, purple);
 }
 
-.main-container {
+[class*="main-container"] {
     width: 100%;
     min-width: 720px;
     max-width: 1600px;
@@ -100,17 +125,25 @@
     border: 1px solid darkmagenta;
 }
 
+[class|="cards"] {
+    
+}
+
 /* END CONTAINERS */
 
 
 /* MAIN-HEADER */
 
-.main-header {
+/* .main-header {
     justify-content: space-between;
+} */
+
+.main-container-header > .nav {
+    justify-content: center;
 }
 
-.main-nav {
-    justify-content: center;
+.main-container-header > [class*="btn"] {
+    /* В будущем будет перекидывать на вход сайта магазина*/
 }
 
 /* END MAIN-HEADER */
@@ -118,17 +151,15 @@
 
 /* MAIN */
 
-.main {
+/* .main {
     flex-grow: 1;
+} */
+
+[class|="cards"] {
+    /* Не были прописанны стили для контейнера, содержащего карточки товаров */
 }
 
-.cards {
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.card {
+[class|="card"] {
     background-color: slategrey;
     color: black;
     padding: 20px;
@@ -146,7 +177,13 @@
         "btn btn";
 }
 
-.sub-title {
+.cards {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+[class|="card"] > [class*="title"] {
     color: azure;
     font-weight: 400;
     size: 28px;
