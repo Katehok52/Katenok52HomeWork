@@ -4,9 +4,22 @@
     box-sizing: border-box;
 }
 
+html {
+        /* базовые цвета */
+    --lightest: aquamarine;
+    --light: blueviolet;
+    --base: purple;
+    --dark: blue;
+    --darkest: black;
+
+        /* серые базовые цвета */
+    
+}
+
 ::selection {
-    background-color: blueviolet;
-    color: white;
+    /* background-color: blueviolet; */
+    background-color: var(--dark);
+    color: var(--lightest);
 }
 
 /* COMMON ITEMS */
@@ -14,14 +27,14 @@
 [class*="txt"],
 [class*="title"] {
     font-family: "Ubuntu", sans-serif;
-    color: blueviolet;
+    color: var(--base);
     font-size: 20px;
 }
 
 [class*="txt"]::selection,
 [class*="title"]::selection {
-    background-color: blue;
-    color: white;
+    background-color: var(--dark);
+    color: var(--lightest);
 }
 
 .big-title {
@@ -37,20 +50,20 @@
 }
 
 [class*="link"]:hover {
-    color: rgb(142, 125, 255);
+    color: var(--light);
     transform: scale(1.1);
 }
 
 [class*="link"]:active {
-    color: rgb(255, 5, 111);
+    color: var(--base);
     transform: scale(0.9);
 }
 
 [class*="txt-btn"] {
     text-decoration: none;
-    border: 2px solid rgb(100, 0, 151);
-    background-color: blueviolet;
-    color: azure;
+    border: 2px solid var(--base);
+    background-color: var(--light);
+    color: var(--lightest);
     padding: 10px 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -62,18 +75,18 @@
 }
 
 .txt-btn::selection {
-    background-color: white;
-    color: blueviolet;
+    background-color: var(--lightest);
+    color: var(--light);
 }
 
 .txt-btn:hover {
     transform: scale(1.1);
-    background-color: rgb(192, 125, 255);
+    background-color: var(--light);
 }
 
 .txt-btn:active {
     transform: scale(0.9);
-    background-color: rgb(99, 0, 191);
+    background-color: var(--base);
 }
 
 
@@ -112,17 +125,17 @@
     min-height: 100vh;
     width: 100%;
     padding: 40px;
-    background-image: radial-gradient(aquamarine, purple);
+    background-image: radial-gradient(var(--lightest), var(--base));
 }
 
 [class*="main-container"] {
     width: 100%;
     min-width: 720px;
     max-width: 1600px;
-    background-color: azure;
+    background-color: var(--lightest);
     padding: 20px;
     border-radius: 20px;
-    border: 1px solid darkmagenta;
+    border: 1px solid var(--base);
 }
 
 [class|="cards"] {
@@ -160,11 +173,11 @@
 }
 
 [class|="card"] {
-    background-color: slategrey;
+    background-color: var(--base);
     color: black;
     padding: 20px;
     border-radius: 15px; /* tmp */
-    box-shadow: rgb(112, 109, 116) 5px 5px 5px;
+    box-shadow: var(--base) 5px 5px 5px;
 
     display: grid;
     gap: 10px;
@@ -184,20 +197,20 @@
 }
 
 [class|="card"] > [class*="title"] {
-    color: azure;
+    color: var(--darkest);
     font-weight: 400;
     size: 28px;
     grid-area: title;
 }
 
 .card-price {
-    color: azure;
+    color: var(--lightest);
     size: 24px;
     grid-area: price;
 }
 
-.txt {
-    color: azure;
+[class|="card"] > .small-txt {
+    color: var(--lightest);
     grid-area: txt;
 }
 
