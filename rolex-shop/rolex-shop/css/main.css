@@ -489,3 +489,28 @@ button {
     top: 5rem;
     right: 5rem;
 }
+
+.newsletter-container {
+    background-color: var(--first-color);
+    padding: 4.5rem;
+    display: flex;
+    column-gap: 2rem;
+}
+
+.newsletter-form {
+    width: 100%;
+    display: flex;
+}
+
+.form-email {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 1.25rem 1rem;
+}
+
+.from-buttom {
+    background-color: var(--button-color);
+    color: #fff;
+    padding: 1.25rem 2rem;
+}
