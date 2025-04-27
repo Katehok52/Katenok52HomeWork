@@ -35,3 +35,11 @@ function factor(n) {
     if (n == 0) return 1;
     return n * factor(n - 1);
 }
+
+// факториал числа (циклическая ф)
+function factorCicle(n) {
+    if (n < 0) return;
+    let res = 1;
+    for ( let i = 1; i <= n; ++i) res *= i; //res = res * i
+    return res;
+}
